@@ -10,6 +10,7 @@ import claude from './claude';
 import codex from './codex';
 import factory from './factory';
 import kiro from './kiro';
+import mynewagent from './mynewagent';
 import opencode from './opencode';
 import slate from './slate';
 import cursor from './cursor';
@@ -21,7 +22,7 @@ import agy from './agy';
 import gemini from './gemini';
 
 /** All registered host configs. Add new hosts here. */
-export const ALL_HOST_CONFIGS: HostConfig[] = [claude, codex, factory, kiro, opencode, slate, cursor, openclaw, hermes, gbrain, copilot, agy, gemini];
+export const ALL_HOST_CONFIGS: HostConfig[] = [claude, codex, factory, kiro, mynewagent, opencode, slate, cursor, openclaw, hermes, gbrain, copilot, agy, gemini];
 
 /** Map from host name to config. */
 export const HOST_CONFIG_MAP: Record<string, HostConfig> = Object.fromEntries(
